@@ -43,6 +43,7 @@ background: #FFF;
 
 .container {
     display: flex;
+    width: 1440px;
 }
 
 .page-header-container {
@@ -53,6 +54,7 @@ background: #FFF;
 
 .nav-list {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -84,11 +86,9 @@ color: #4d5ae5;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    gap: 40px;
+    column-gap: 40px;
     padding-top: 24px;
         padding-bottom: 24px;
-
-
 }
 
 .menu-link {
@@ -132,7 +132,6 @@ color: #2E2F42;
 
 /* =============== SECTION TITLE =============== */
 
-
 .main-title {
     text-align: center;
     font-size: 56px;
@@ -157,8 +156,21 @@ color: #ffffff;
     background: #404BBF;
 }
 
-.section-features {
-    background: #FFF;
+/* ============= /SECTION TITLE =============== */
+
+/* ============= SECTION FEATURES ============= */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-title {
@@ -174,8 +186,11 @@ color: #ffffff;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
-    
-}
+ }
+
+/* ============= /SECTION FEATURES ============= */
+
+/* ================ SECTION TIAM =============== */
 
 .section-team {
     background: #F4F4FD;
@@ -218,8 +233,18 @@ background-color: #FFFFFF;
         letter-spacing: 0.02em;
         }
 
+/* ================ /SECTION TIAM =============== */
 
 
+
+
+/* ============== SECTION PORTFOLIO ============ */
+
+/* ============== /SECTION PORTFOLIO ============ */
+
+
+
+/* ================== FOOTER ===================== */
 
 .section-footer {
 background: #2E2F42;
@@ -244,3 +269,5 @@ background: #2E2F42;
         letter-spacing: 0.02em;
         color: #F4F4FD;
 }
+
+/* ================== /FOOTER ===================== */
