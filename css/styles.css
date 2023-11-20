@@ -55,6 +55,10 @@ height: auto;
 
 /* =================== HEADER ================= */
 
+.page-header {
+border-bottom: 1px solid #E7E9FC;
+}
+
 
 .page-header-container {
     display: flex;
@@ -108,7 +112,7 @@ margin-right: 76px;
         line-height: 1.5;
         letter-spacing: 0.02em;
 color: #2E2F42;
-padding: 24px, 0;
+padding: 24px 0;
 display: block;
 
 }
@@ -124,7 +128,7 @@ display: block;
 
 .contacts-list {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .contacts-link {
@@ -146,7 +150,7 @@ display: block;
 
 .section-title {
     background: #2E2F42;
-    padding: 188px, 0;
+    padding: 188px 0;
     flex-shrink: 0;
 }
 
@@ -176,7 +180,8 @@ color: #ffffff;
     display: block;
     padding: 16px 32px;
 border: none;
-border-radius: 4px;}
+border-radius: 4px;
+min-width: 169px;}
 
 .main-button:hover,
 .main-button:focus
@@ -225,8 +230,14 @@ border-radius: 4px;}
 
 .features-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
+
+ }
+
+.features-list-item {
+    width: calc((100% - 72px) / 4);
 }
+
 
 /* ============= /SECTION FEATURES ============= */
 
@@ -282,14 +293,14 @@ gap: 24px;
     margin-bottom: 8px;
 }
 
-.team-text,
-.project-text {
+.team-text {
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
         text-align: center;
-        }
+    }
+
 
 /* ================ /SECTION TIAM =============== */
 
@@ -318,6 +329,13 @@ gap: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
+
+    .project-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        }
 
 }
 /* ============== /SECTION PORTFOLIO ============ */
